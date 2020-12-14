@@ -1,0 +1,62 @@
+/* -------------------------------------------------------------
+# hero section
+---------------------------------------------------------------- */
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/king.jpg") center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#hero::after {
+    content: "";
+    background: rgba(5, 13, 24, 0.3);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+#hero .hero-container {
+    margin-left: 300px;
+    padding: 20px;
+}
+
+#hero .hero-container .welcome {
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+    background-color: rgba(118, 173, 255, 0.4);
+    margin-top: 10vh;
+}
+
+#hero .hero-container .welcome h1 {
+    text-align: center;
+    font-size: 7vw;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#hero .hero-container .welcome p {
+    text-align: center;
+    font-size: 2vw;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    #hero .hero-container{
+        margin: auto;
+    }
+
+    #hero .hero-container .welcome h1{
+        font-size: 50px;
+    }
+
+    #hero .hero-container .welcome p{
+        font-size: 20px;
+    }
+}
