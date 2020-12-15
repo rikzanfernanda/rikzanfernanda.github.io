@@ -31,13 +31,45 @@
                 </h1>
             </div>
 
-            <nav class="nav-menu">
-                <ul>
-                    <li class="active"><a href="index.html"><span><img src="assets/icons/icons8-home-20.png" alt=""></span>Home</a></li>
-                </ul>
-            </nav>
+            <div style="display: flex;justify-content: center;">
+                <div class="sosmed">
+                    <a href="">
+                        <img src="assets/icons/icons8-instagram.svg" alt="" width="25px">
+                    </a>
+                </div>
+                <div class="sosmed">
+                    <a href="">
+                        <img src="assets/icons/icons8-facebook.svg" alt="" width="25px">
+                    </a>
+                </div>
+                <div class="sosmed">
+                    <a href="">
+                        <img src="assets/icons/icons8-whatsapp.svg" alt="" width="25px">
+                    </a>
+                </div>
+                <div class="sosmed">
+                    <a href="">
+                        <img src="assets/icons/icons8-linkedin-circled.svg" alt="" width="25px">
+                    </a>
+                </div>
+                <div class="sosmed">
+                    <a href="">
+                        <img src="assets/icons/icons8-git.svg" alt="" width="25px">
+                    </a>
+                </div>
+            </div>
+        </div>
 
-            <span class="close-nav">&times;</span>
+        <nav class="nav-menu">
+            <ul>
+                <li>
+                    <a href="index.html"><span><img src="assets/icons/icons8-home-20.png" alt=""></span>Home</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <span class="close-nav">&times;</span>
 
         </div>
     </header>
@@ -49,168 +81,793 @@
 
                 <div class="section-title">
                     <h2>Portfolio</h2>
-                    <p>
-                        Keahlian saya terdiri dari image editing dengan photoshop dan illustrator dan juga web
-                        development. Berikut adalah kumpulan dari beberapa portofolio saya:
-                    </p>
+                </div>
+                <div style="display: flex;justify-content: center;margin-bottom: 20px;">
+                    <button class="btn btn-category clicked-category" value="all">All</button>
+                    <button class="btn btn-category" value="vector">vector Illustration</button>
+                    <button class="btn btn-category" value="editing">Photo Editing</button>
+                    <button class="btn btn-category" value="web">Web</button>
                 </div>
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-4 pf" data-category="vector">
                         <div class="card">
                             <div class="card-foto">
-                                <img id="img-modal" src="assets/images/flower-729512_640.jpg" alt="">
+                                <img id="img-modal" src="assets/images/11bgliquid.jpg" alt="">
                             </div>
                             <div class="deskripsi">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, doloribus itaque
-                                    animi at deleniti optio assumenda fugiat omnis velit perferendis rerum debitis culpa
-                                    commodi eius nemo accusamus temporibus iure eum! Lorem ipsum dolor sit amet
-                                    consectetur adipisicing elit. Ratione quo dicta rem quia? Aliquid eum at mollitia
-                                    enim maiores iure quidem aliquam placeat, excepturi expedita quos dolorem, quasi
-                                    vitae architecto.</p>
+
                             </div>
                         </div>
+                    </div>
+                    <div class="col-4 pf" data-category="editing">
                         <div class="card">
                             <div class="card-foto">
-                                <img id="img-modal" src="assets/images/heart-1776746_640.jpg" alt="">
+                                <img id="img-modal" src="assets/images/38caa42c0578fd7621f2d06e125d4976-2-edit.jpg"
+                                    alt="">
+                            </div>
+                            <div class="deskripsi">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="editing">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/bag_2.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/bglandscape padangpasi dan kaktus.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/bglandscape2.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="editing">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/boy-edit.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character1.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character4.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character7.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character8.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character9.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character10.jpg" alt="">
                             </div>
                             <div class="deskripsi">
                                 <p>
-                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, doloribus itaque
-                                    animi at deleniti optio assumenda fugiat omnis velit perferendis rerum debitis culpa
+
                                 </p>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character12.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character14.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character15.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character20.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character21.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character22.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character25.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character26.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character29.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character30.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/eidaladha character31.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/fathers day 1.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/fathers day 2.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/fathers day 3.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/fathers day 4.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/fathers day 14.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/fathers day 15.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/fathers day 15a.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/fathers day 16a.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/fathers day 17a.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/fathers day 20.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/islamilagi11.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/islamilagi10.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/islamilagi7.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/islamilagi4.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/flowers24.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/fathers day14.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/fathers day.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/fathers day 27.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/fathers day 26.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/fathers day 25.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/fathers day 24.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="web">
                         <div class="card">
                             <div class="card-foto">
                                 <img id="img-modal" src="assets/images/portofolio1.jpg" alt="">
                             </div>
                             <div class="deskripsi">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum, ipsum sed earum rem consectetur a assumenda qui minus voluptas dolorem inventore quia expedita eum atque labore voluptate illum quaerat repellat deleniti suscipit totam aspernatur explicabo? Qui corrupti necessitatibus tempora.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-foto">
-                                <img id="img-modal" src="assets/images/business-792113_640.jpg" alt="">
-                            </div>
-                            <div class="deskripsi">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda eaque vitae nemo consequuntur quibusdam provident temporibus, sed rem optio quam quisquam, reprehenderit nisi nam corporis magnam, molestiae possimus dolor iusto cupiditate reiciendis suscipit excepturi. Iusto, voluptate, aperiam repellendus quae alias deleniti modi veniam nobis natus animi adipisci dolorum iure beatae?
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-foto">
-                                <img id="img-modal" src="assets/images/child-865116_640.jpg" alt="">
-                            </div>
-                            <div class="deskripsi">
-                                <p>
-                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, vero.
+
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 pf" data-category="vector">
                         <div class="card">
                             <div class="card-foto">
-                                <img id="img-modal" src="assets/images/rikzanfe.jpg" alt="">
+                                <img id="img-modal" src="assets/images/move16.jpg" alt="">
                             </div>
                             <div class="deskripsi">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi officiis dolores unde odio sunt doloremque, porro quaerat eveniet maiores at.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-foto">
-                                <img id="img-modal" src="assets/images/wedoshancok.jpg" alt="">
-                            </div>
-                            <div class="deskripsi">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit veritatis error accusamus molestiae praesentium! Vero ex beatae assumenda dolor mollitia commodi quibusdam. Sunt distinctio id optio et at quos quaerat aut nisi, corporis reprehenderit? Laboriosam consectetur obcaecati quo veniam non.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-foto">
-                                <img id="img-modal" src="assets/images/portofolio2.jpg" alt="">
-                            </div>
-                            <div class="deskripsi">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum, ipsum sed earum rem consectetur a assumenda qui minus voluptas dolorem inventore quia expedita eum atque labore voluptate illum quaerat repellat deleniti suscipit totam aspernatur explicabo? Qui corrupti necessitatibus tempora.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-foto">
-                                <img id="img-modal" src="assets/images/living-room-2732939_640.jpg" alt="">
-                            </div>
-                            <div class="deskripsi">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum, ipsum sed earum rem consectetur a assumenda qui minus voluptas dolorem inventore quia expedita eum atque labore voluptate illum quaerat repellat deleniti suscipit totam aspernatur explicabo? Qui corrupti necessitatibus tempora.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-foto">
-                                <img id="img-modal" src="assets/images/furniture-998265_640.jpg" alt="">
-                            </div>
-                            <div class="deskripsi">
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum, ipsum sed earum rem consectetur a assumenda qui minus voluptas dolorem inventore quia expedita eum atque labore voluptate illum quaerat repellat deleniti suscipit totam aspernatur explicabo? Qui corrupti necessitatibus tempora.
+
                                 </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/move15.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/move14.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/move13.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/move12.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/logotemplate20.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/logotemplate19.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/logotemplate4.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="editing">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/kingedit.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/islamilagi16.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="web">
                         <div class="card">
                             <div class="card-foto">
                                 <img id="img-modal" src="assets/images/web-donasi.jpg" alt="">
                             </div>
                             <div class="deskripsi">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, doloribus itaque
-                                    animi at deleniti optio assumenda fugiat omnis velit perferendis rerum debitis culpa
-                                    commodi eius nemo accusamus temporibus iure eum!</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-foto">
-                                <img id="img-modal" src="assets/images/pattern_25.jpg" alt="">
-                            </div>
-                            <div class="deskripsi">
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit, doloribus itaque
-                                    animi at deleniti optio assumenda fugiat omnis velit perferendis rerum debitis culpa
-                                    commodi eius nemo accusamus temporibus iure eum!</p>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-foto">
-                                <img id="img-modal" src="assets/images/shapess_1.jpg" alt="">
-                            </div>
-                            <div class="deskripsi">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum, ipsum sed earum rem consectetur a assumenda qui minus voluptas dolorem inventore quia expedita eum atque labore voluptate illum quaerat repellat deleniti suscipit totam aspernatur explicabo? Qui corrupti necessitatibus tempora.
+
                                 </p>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/sosmed-text.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/sosmed6.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/sosmed5-m.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/sosmed4-m.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/sosmed3-m.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
                         <div class="card">
                             <div class="card-foto">
                                 <img id="img-modal" src="assets/images/shapess_2.jpg" alt="">
                             </div>
                             <div class="deskripsi">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum, ipsum sed earum rem consectetur a assumenda qui minus voluptas dolorem inventore quia expedita eum atque labore voluptate illum quaerat repellat deleniti suscipit totam aspernatur explicabo? Qui corrupti necessitatibus tempora.
+
                                 </p>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-4 pf" data-category="vector">
                         <div class="card">
                             <div class="card-foto">
-                                <img id="img-modal" src="assets/images/medic-563423_640.jpg" alt="">
+                                <img id="img-modal" src="assets/images/shapess_1.jpg" alt="">
                             </div>
                             <div class="deskripsi">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe rerum, ipsum sed earum rem consectetur a assumenda qui minus voluptas dolorem inventore quia expedita eum atque labore voluptate illum quaerat repellat deleniti suscipit totam aspernatur explicabo? Qui corrupti necessitatibus tempora.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="editing">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/Screenshot 2020-10-28 at 03.23.21-edit.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="web">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/rikzanfe.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="web">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/portofolio2.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4 pf" data-category="web">
+                        <div class="card">
+                            <div class="card-foto">
+                                <img id="img-modal" src="assets/images/wedoshancok.jpg" alt="">
+                            </div>
+                            <div class="deskripsi">
+                                <p>
+
                                 </p>
                             </div>
                         </div>
@@ -229,7 +886,8 @@
     <footer id="footer">
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><a href="https://github.com/rikzanfernanda" target="_blank">Rikzan Fernanda</a></strong>
+                &copy; Copyright <strong><a href="https://github.com/rikzanfernanda" target="_blank">Rikzan
+                        Fernanda</a></strong>
             </div>
         </div>
     </footer>
@@ -238,6 +896,7 @@
     <!-- Scripts -->
     <script src="assets/js/myscript.js"></script>
     <script src="assets/js/modal-img.js"></script>
+    <script src="assets/js/portfolio.js"></script>
 </body>
 
 </html>

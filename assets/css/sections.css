@@ -39,6 +39,17 @@ section {
 # About Section
 ---------------------------------------------------------------- */
 
+#about .about-hide {
+    transform: translateY(80px);
+    opacity: 0;
+    transition: ease-out 1s;
+}
+
+#about .about-show {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 #about .table-about {
     text-align: left;
     width: 100%;
@@ -57,21 +68,70 @@ section {
     width: 100%;
 }
 
+#about .identitas {
+    list-style-type: none;
+    margin: 0px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#about .skill-bar {
+    color: white;
+    background-color: whitesmoke;
+    width: 100%;
+    font-weight: normal;
+    font-size: 10px;
+    margin-top: 10px;
+    border-radius: 50px;
+}
+
+#about .design, #about .web, #about .wordpress, #about .python {
+    background-color: #040b14;
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+
+#about .design {
+    width: 85%;
+}
+
+#about .web {
+    width: 85%;
+}
+
+#about .wordpress {
+    width: 80%;
+}
+
+#about .python {
+    width: 65%;
+}
+
 /* -------------------------------------------------------------
 # Portfolio Section
 ---------------------------------------------------------------- */
 
+#portfolio .portfolio-hide {
+    transform: translateY(80px);
+    opacity: 0;
+    transition: ease-out 1s;
+}
+
+#portfolio .portfolio-show {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 #portfolio .row img {
     width: 100%;
     height: 250px;
-    /* background-size: cover; */
     object-fit: cover;
 }
 
 #portfolio .card {
     background-color: white;
     margin-right: 5px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     padding: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
@@ -115,8 +175,6 @@ section {
     margin: auto;
     display: block;
     max-width: 800px;
-    /* height: 100%; */
-    /* height: 550px; */
 }
 
 #portfolio .close {
@@ -135,13 +193,55 @@ section {
     cursor: pointer;
 }
 
+#portfolio .more-efek {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio .more {
+    position: absolute;
+    background-color: black;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio .more-btn {
+    display: none;
+    font-size: 30px;
+    position: absolute;
+}
+
+#portfolio .clicked-category {
+    background-color: #149ddd;
+    color: white;
+}
+
+#portfolio .btn-category:focus {
+    outline: none;
+}
+
 /* -------------------------------------------------------------
 # Contact Section
 ---------------------------------------------------------------- */
 
+#contact .contact-hide {
+    transform: translateY(80px);
+    opacity: 0;
+    transition: ease-out 1s;
+}
+
+#contact .contact-show {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 #contact .card {
     padding: 30px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #contact .row .card-foto {
@@ -149,7 +249,7 @@ section {
     height: 250px;
 }
 
-#contact .row .card-foto img {
+#contact .row .card-foto iframe {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -187,8 +287,16 @@ section {
 }
 
 @media (max-width: 768px) {
-    #portfolio .modal-content{
+    #portfolio .modal-content {
         width: 100%;
         margin-top: 50px;
+    }
+
+    #portfolio .more{
+        opacity: 0.5;
+    }
+
+    #portfolio .more-btn{
+        display: block;
     }
 }
