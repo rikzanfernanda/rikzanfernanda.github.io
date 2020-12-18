@@ -4,18 +4,9 @@
 
 #footer {
     padding: 15px;
-    color: #f4f6fd;
+    color: black;
     font-size: 14px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 300px;
-    z-index: 9999;
-    background: #040b14;
-}
-
-#footer a{
-    color: white;
+    margin-left: 300px;
 }
 
 #footer a:hover{
@@ -26,10 +17,17 @@
     text-align: center;
 }
 
+#footer ul{
+    margin: 0px;
+    list-style-type: none;
+}
+
+#footer ul li{
+    padding: 5px 0px;
+}
+
 @media (max-width: 768px){
     #footer{
-        display: block;
-        position: relative;
-        width: 100%;
+        margin-left: 0px;
     }
 }
