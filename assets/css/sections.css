@@ -55,6 +55,10 @@ section {
     width: 100%;
 }
 
+#about .card{
+    padding: 20px;
+}
+
 #about .table-about tr:nth-child(odd) {
     background-color: #f5f8fd;
 }
@@ -71,8 +75,6 @@ section {
 #about .identitas {
     list-style-type: none;
     margin: 0px;
-    font-size: 1.1em;
-    font-weight: bold;
 }
 
 #about .identitas li{
@@ -182,7 +184,7 @@ section {
 }
 
 #portfolio .modal .modal-img{
-    width: 70%;
+    width: 65%;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
