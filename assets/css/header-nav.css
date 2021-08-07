@@ -81,7 +81,7 @@
     margin: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     #header {
         margin-left: -100%;
         width: 100%;
