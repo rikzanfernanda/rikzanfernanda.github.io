@@ -137,6 +137,7 @@
 
 .img-modal{
     border-radius: 0rem;
+    border: 1px solid #e8e8e8;
 }
 
 .pf{
@@ -145,6 +146,21 @@
 
 #footer{
     font-size: 0.8rem;
+}
+
+.doc-fixed{
+    overflow: hidden;
+}
+
+.btn{
+    padding: 0rem 1rem !important;
+    border-radius: 16px;
+}
+#portfolio-row{
+    transition: ease-out 1000ms;
+}
+.portfolio-row{
+    margin-top: 10rem;
 }
 
 @media (min-width: 350px) {
@@ -169,5 +185,12 @@
     #portfolio .row .card-foto {
         width: 100%;
         height: 10rem;
+    }
+    .btn{
+        padding: 0.25rem 1rem !important;
+        border-radius: 16px;
+    }
+    .portfolio-row{
+        margin-top: 8rem;
     }
 }

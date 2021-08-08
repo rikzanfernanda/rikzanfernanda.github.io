@@ -11,14 +11,17 @@
         <link rel="stylesheet" href="assets/css/portfolio2.css"/>
     </head>
 
-    <body>
-        <header class="mb-5">
+    <body class="">
+        <header class="">
             <div class="p-4 p-md-5" style="height: 20%; background-color: #719abf">
                 <div class="row">
                     <div class="col-md-6">
                         <h1 id="title">Portfolio</h1>
                         <p class="text-center text-md-left" id="subtitle">
                             Welcome. All graphic designs are made with Adobe Photoshop and Illustrator.
+                        </p>
+                        <p class="text-center text-md-left">
+                            I have experience in using Photoshop or Illustrator. using the tool since 2017.
                         </p>
                     </div>
                     <div class="col-md-6">
@@ -57,16 +60,25 @@
         <main id="main" class="mb-5">
 
             <section id="portfolio" class="portfolio section-bg">
-                <div class="container">
-                    <div style="display: flex;justify-content: center;margin-bottom: 20px; flex-wrap: wrap;">
+                <div style="background-color: #d3e6ed" class="ctg pt-4 pb-2 mb-4">
+                    <div class="container" style="display: flex;justify-content: center;margin-bottom: 1rem; flex-wrap: wrap;">
                         <button class="btn btn-category clicked-category" value="all">All</button>
                         <button class="btn btn-category" value="vector">Vector Illustration</button>
                         <button class="btn btn-category" value="medsos">Social Media</button>
                         <button class="btn btn-category" value="poster">Poster</button>
                         <button class="btn btn-category" value="editing">Photo Editing</button>
-                        <button class="btn btn-category" value="lanpage">Landing Page</button>
-                        <button class="btn btn-category" value="web">Web</button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCategory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                More
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownCategory">
+                                <button class="btn-category dropdown-item" value="web">Web</button>
+                                <button class="btn-category dropdown-item" value="lanpage">Landing Page</button>
+                            </div>
+                        </div>
                     </div>
+                </div>
+                <div class="container" id="portfolio-row">
                     <div class="row" style="display: flexbox;">
                         <div class="col-4 col-md-3 p-md-2 pf" data-category="medsos">
                             <div class="card border-0">
@@ -623,6 +635,7 @@
 
         <!-- Scripts -->
         <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/portfolio2.js"></script>
     </body>
