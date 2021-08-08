@@ -15,14 +15,6 @@
     object-fit: cover;
 }
 
-/* #portfolio .card {
-    background-color: white;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    padding: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-} */
-
 #portfolio .row .card-foto {
     width: 100%;
     height: 4.5rem;
@@ -157,10 +149,60 @@
     border-radius: 16px;
 }
 #portfolio-row{
-    transition: ease-out 1000ms;
+    transition: ease 0.5s;
+    padding: 1rem;
 }
 .portfolio-row{
-    margin-top: 10rem;
+    margin-top: 8rem;
+}
+
+.mytooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.mytooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.mytooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.mytooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.share{
+    float: left;
+    transition: ease 0.5s;
+    margin-top: 8rem;
+    margin-left: 1rem;
+}
+#footer{
+    position: relative;
+    z-index: 3;
 }
 
 @media (min-width: 350px) {
@@ -192,5 +234,8 @@
     }
     .portfolio-row{
         margin-top: 8rem;
+    }
+    #portfolio-row{
+        margin-left: 10rem;
     }
 }

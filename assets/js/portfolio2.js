@@ -48,6 +48,7 @@ span_close.addEventListener("click", () => {
 });
 
 var fixmeTop = $('.ctg').offset().top;       // get initial position of the element
+var share = 441;
 
 $(window).scroll(function () {                  // assign scroll event listener
 
@@ -68,4 +69,31 @@ $(window).scroll(function () {                  // assign scroll event listener
         $('#portfolio-row').removeClass('portfolio-row');
     }
 
+    if (currentScroll >= share) {
+        $('.share').css({// scroll to that element or below it
+            position: 'fixed',
+            top: '5rem',
+            zIndex: 2
+        });
+    } else {
+        $('.share').css({// scroll to that element or below it
+            position: 'static',
+        });
+    }
+
 });
+
+function copyToClipboard(element) {
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val($(element).text()).select();
+    document.execCommand("copy");
+    $temp.remove();
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copied";
+}
+
+function outFunc() {
+    var tooltip = document.getElementById("myTooltip");
+    tooltip.innerHTML = "Copy to clipboard";
+}
