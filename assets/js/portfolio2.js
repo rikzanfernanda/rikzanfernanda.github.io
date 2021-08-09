@@ -47,39 +47,28 @@ span_close.addEventListener("click", () => {
     $('body').removeClass("doc-fixed");
 });
 
-var fixmeTop = $('.ctg').offset().top;       // get initial position of the element
+var fixmeTop = $('.ctg').offset().top;
 var share = 441;
 
-$(window).scroll(function () {                  // assign scroll event listener
+$(window).scroll(function () {
 
-    var currentScroll = $(window).scrollTop(); // get current position
+    var currentScroll = $(window).scrollTop();
 
-    if (currentScroll >= fixmeTop) {           // apply position: fixed if you
-        $('.ctg').css({// scroll to that element or below it
-            position: 'fixed',
-            top: '0',
-            zIndex: 99,
-            width: "100%"
-        });
-        $('#portfolio-row').addClass('portfolio-row');
-    } else {                                   // apply position: static
-        $('.ctg').css({// if you scroll above it
-            position: 'static'
-        });
-        $('#portfolio-row').removeClass('portfolio-row');
-    }
-
-    if (currentScroll >= share) {
-        $('.share').css({// scroll to that element or below it
-            position: 'fixed',
-            top: '5rem',
-            zIndex: 2
-        });
+    if (currentScroll >= fixmeTop) {
+        $('.ctg').addClass('ctg-fix');
     } else {
-        $('.share').css({// scroll to that element or below it
-            position: 'static',
-        });
+        $('.ctg').removeClass('ctg-fix');
     }
+    
+    if (currentScroll >= share) {
+        $('.share').addClass('share-fix');
+    } else {
+        $('.share').removeClass('share-fix');
+    }
+    
+    $('#judul').css({
+        'transform': 'translate(0px,'+ currentScroll/4 +'%)'
+    });
 
 });
 
