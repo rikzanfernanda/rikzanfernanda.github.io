@@ -35,7 +35,6 @@ let modal_img_deskripsi = modal_img.getElementsByClassName('modal-img-deskripsi'
 for (let i = 0; i < img.length; i++) {
     img[i].addEventListener("click", () => {
         $('body').addClass("doc-fixed");
-
         modal_img.style.display = "block";
         img01.src = img[i].src;
         modal_img_deskripsi.innerHTML = deskripsi[i].innerHTML;
@@ -59,15 +58,15 @@ $(window).scroll(function () {
     } else {
         $('.ctg').removeClass('ctg-fix');
     }
-    
-    if (currentScroll >= share) {
+
+    if (currentScroll >= share && currentScroll <= 1800) {
         $('.share').addClass('share-fix');
     } else {
         $('.share').removeClass('share-fix');
     }
-    
+
     $('#judul').css({
-        'transform': 'translate(0px,'+ currentScroll/4 +'%)'
+        'transform': 'translate(0px,' + currentScroll / 4 + '%)'
     });
 
 });
@@ -87,5 +86,6 @@ function outFunc() {
     tooltip.innerHTML = "Copy to clipboard";
 }
 
-//$(".coba-img").zoomer();
+//$(".modal-zoom").zoomer();
 //$('.modal-zoom').easyZoom();
+$(".zoom-img").zoomer();

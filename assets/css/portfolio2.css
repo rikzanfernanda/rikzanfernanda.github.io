@@ -45,7 +45,7 @@ header{
 #portfolio .modal {
     display: none;
     position: fixed;
-    z-index: 99999;
+    z-index: 999;
     padding-top: 30px;
     padding-bottom: 20px;
     left: 0;
@@ -58,7 +58,7 @@ header{
 }
 
 #portfolio .modal .modal-img{
-    width: 85%;
+    width: 90%;
     background-color: white;
     margin-left: auto;
     margin-right: auto;
@@ -76,10 +76,7 @@ header{
 }
 
 #portfolio .close {
-    /*position: absolute;*/
-    /*    top: 15px;
-        right: 35px;*/
-    /*color: #f1f1f1;*/
+    float: none;
     padding-right: 0.5rem;
     font-size: 30px;
     font-weight: bold;
@@ -243,6 +240,27 @@ header{
     height: 1.25rem;
 }
 
+#me{
+    background-color: #78e08f;
+    padding: 4rem 0rem;
+    position: relative;
+}
+#me .konten{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.zoom{
+    width: 80%;
+    margin: auto;
+}
+.zoom .zoom-img{
+    height: 12rem;
+}
+.zoom .zoomer{
+    background-color: transparent;
+}
+
 @media (min-width: 350px) {
     #portfolio .row .card-foto {
         width: 100%;
@@ -259,6 +277,13 @@ header{
         font-size: 2rem;
         text-align: left;
     }
+    #portfolio .modal-content {
+        height: 80vh;
+        width: auto;
+    }
+    #portfolio .modal-zoom{
+        overflow: auto;
+    }
     #portfolio .row .card-foto {
         width: 100%;
         height: 10rem;
@@ -274,5 +299,30 @@ header{
     }
     .chat{
         top: 90%;
+    }
+
+    #me{
+        padding: 4rem 0rem;
+        position: relative;
+        margin-bottom: 8rem;
+    }
+    #me .konten{
+        width: 60%;
+        padding-left: 3rem;
+        min-height: 12rem;
+    }
+
+    .zoom{
+        position: absolute;
+        top: 12rem;
+        right: 3rem;
+        width: 30%;
+        box-shadow: 0rem 0.25rem 2rem rgba(0,0,0,0.35);
+    }
+    .zoom .zoom-img{
+        height: 12rem;
+    }
+    .zoom .zoomer{
+        background-color: #079992;
     }
 }

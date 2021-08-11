@@ -8,14 +8,14 @@
 
         <!-- CSS -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="assets/css/jquery.fs.zoomer.css"/>
         <link rel="stylesheet" href="assets/css/portfolio2.css"/>
         <link rel="stylesheet" href="assets/css/all.min.css"/>
-        <!--<link rel="stylesheet" href="assets/css/jquery.fs.zoomer.css"/>-->
     </head>
 
     <body class="">
         <header class="">
-            <div class="p-4 p-md-5" style="height: 20%; background-color: #719abf">
+            <div class="p-4 p-md-5" style="height: 20%; background-color: #60a3bc">
                 <div class="row">
                     <div class="col-md-6">
                         <div id="judul">
@@ -64,15 +64,15 @@
         <main id="main" class="mb-5">
 
             <section id="portfolio" class="portfolio section-bg">
-                <div style="background-color: #d3e6ed" class="ctg pt-4 pb-2 mb-4">
+                <div style="background-color: #3c6382;" class="ctg pt-4 pb-2 mb-4">
                     <div class="container">
                         <button class="btn btn-category clicked-category" value="all">All</button>
-                        <button class="btn btn-category" value="vector">Vector Illustration</button>
-                        <button class="btn btn-category" value="medsos">Social Media</button>
-                        <button class="btn btn-category" value="poster">Poster</button>
-                        <button class="btn btn-category" value="editing">Photo Editing</button>
+                        <button class="btn btn-category text-white" value="vector">Vector Illustration</button>
+                        <button class="btn btn-category text-white" value="medsos">Social Media</button>
+                        <button class="btn btn-category text-white" value="poster">Poster</button>
+                        <button class="btn btn-category text-white" value="editing">Photo Editing</button>
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownCategory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownCategory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 More
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownCategory">
@@ -100,7 +100,7 @@
                         </ul>
                     </div>
                     <!--portfolio-->
-                    <div class="" id="portfolio-row">
+                    <div class="mb-5" id="portfolio-row">
                         <div class="row">
                             <div class="col-4 col-md-3 p-md-2 pf" data-category="medsos">
                                 <div class="card border-0">
@@ -578,7 +578,9 @@
                     <!--modal-->
                     <div id="modal-img" class="modal">
                         <div class="modal-img">
-                            <span class="close">&times;</span>
+                            <div class="text-right">
+                                <span class="close">&times;</span>
+                            </div>
                             <div class="modal-zoom">
                                 <img src="" class="modal-content rounded-0" id="img01">
                             </div>
@@ -591,15 +593,29 @@
 
                     </div>
                 </div>
+                <div id="me">
+                    <div class="konten">
+                        <h1>Rikzan Fernanda</h1>
+                        <p>
+                            Hello, my name is Rikzan. Graphic design expert from Indonesia.
+                            The tools I use are Adobe Illustrator and Photoshop. I have more than 3 years experience in graphic design. Making a quality design requires several considerations such as the target audience and creative content. In making designs, I like to make designs that are modern, simple, clean, functional, stylish and keep up with the times. Like some of my work at: <a href="https://www.behance.net/rikzan_fernanda" class="text-dark font-italic">www.behance.net/rikzan_fernanda</a>
+                        </p>
+                    </div>
+                    <div class="zoom">
+                        <div class="zoom-img">
+                            <img src="assets/images/resmi_1.jpg" class="modal-content">
+                        </div>
+                    </div>
+                </div>
 
             </section>
         </main>
-        
+
         <div class="chat text-center text-md-right px-2">
             <a href="https://api.whatsapp.com/send?phone=6285157660753" target="_blank" class="btn btn-success"><img src="assets/images/whatsapp.png" alt="alt"/> Chat with me</a>
         </div>
 
-        <footer id="footer" class="section-bg p-4 text-white" style="background-color: #071f35">
+        <footer id="footer" class="section-bg p-4 text-white" style="background-color: #0a3d62">
             <div class="">
                 <div class="row">
                     <div class="col-md-6">
@@ -666,8 +682,7 @@
         <script src="assets/js/jquery-3.6.0.min.js"></script>
         <script src="assets/js/popper.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
-<!--        <script src="assets/js/jquery.fs.zoomer.js"></script>
-        <script src="assets/js/easyzoom.js"></script>-->
+        <script src="assets/js/jquery.fs.zoomer.js"></script>
         <script src="assets/js/portfolio2.js"></script>
     </body>
 
