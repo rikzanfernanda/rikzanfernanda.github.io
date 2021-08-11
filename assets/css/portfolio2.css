@@ -230,6 +230,19 @@ header{
     flex-wrap: wrap;
 }
 
+.chat{
+    position: fixed;
+    top: 93%;
+    z-index: 99;
+    width: 100%;
+}
+.chat .btn{
+    box-shadow: 0rem 0.25rem 0.5rem rgba(0,0,0,0.5)!important;
+}
+.chat img{
+    height: 1.25rem;
+}
+
 @media (min-width: 350px) {
     #portfolio .row .card-foto {
         width: 100%;
@@ -258,5 +271,8 @@ header{
     #portfolio-row{
         margin-left: 10rem;
         margin-right: 2rem;
+    }
+    .chat{
+        top: 90%;
     }
 }

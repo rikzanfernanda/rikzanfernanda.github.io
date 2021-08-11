@@ -86,3 +86,6 @@ function outFunc() {
     var tooltip = document.getElementById("myTooltip");
     tooltip.innerHTML = "Copy to clipboard";
 }
+
+//$(".coba-img").zoomer();
+//$('.modal-zoom').easyZoom();
