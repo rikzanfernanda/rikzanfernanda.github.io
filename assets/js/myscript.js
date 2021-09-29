@@ -1,13 +1,41 @@
-let header = document.getElementById('header');
-let menu = document.getElementsByClassName('menu')[0]
-let close_nav = document.getElementsByClassName('close-nav')[0];
+$(document).ready(function () {
+    $(".scroll").on('click', function(e) {
+        e.preventDefault();
+        var target = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: ($(target).offset().top)
+        }, 1000);
+    });
+    $('#scroll-to-top').hide();
+    $(window).scroll(function () {
+        var currentScroll = $(window).scrollTop();
 
-menu.addEventListener('click', ()=>{
-    header.style.marginLeft = "0";
-    menu.style.display = "none";
-});
+        if (currentScroll <= 657) {
+            $('#scroll-to-top').hide();
+        } else {
+            $('#scroll-to-top').show();
+        }
+    });
 
-close_nav.addEventListener('click', ()=>{
-    header.style.marginLeft = "-100%";
-    menu.style.display = "block";
+    //btn scroll to top
+    $('#scroll-to-top').on('click', function (e){
+        $('html, body').animate({
+            scrollTop: (0)
+        }, 1000);
+    });
+
+    $("#typer-me").typer({
+        strings: [
+            "I'm Graphic Designer",
+            "I'm Web Developer"
+        ],
+        useCursor:true,
+        typeSpeed: 100,
+        backspaceSpeed: 20,
+        backspaceDelay: 800,
+        repeatDelay: 1000,
+        repeat: true,
+        autoStart: true,
+        startDelay: 100,
+    });
 });

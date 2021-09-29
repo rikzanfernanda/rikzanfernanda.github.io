@@ -4,321 +4,461 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fernanda's Portfolio</title>
+    <title>Rikzan Fernanda | Home</title>
     <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/mystyle.css">
-    <link rel="stylesheet" href="assets/css/header-nav.css">
-    <link rel="stylesheet" href="assets/css/hero.css">
-    <link rel="stylesheet" href="assets/css/sections.css">
-    <link rel="stylesheet" href="assets/css/footer.css">
-</head>
+    <style>
+        .box {
+            width: 100%;
+            min-height: 25rem;
+            height: 100%;
+            border: 7px solid #ffffff50;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            background-image: linear-gradient(45deg, #08aeea, #2af598 100%);
+            animation: morph 8s ease-in-out infinite;
+        }
 
+        @keyframes morph {
+            0% {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            }
+            50% {
+                border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+                background-image: linear-gradient(45deg, #fa88ff, #2bd2ff 50%, #2bff88 90%);
+            }
+            100% {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            }
+        }
+
+        .box2 {
+            background: #08aeea50 url("assets/images/resmi_1.jpg") no-repeat;
+            background-size: cover;
+            background-position: top -30px center;
+            animation: morphTwo 8s ease-in-out infinite 1s;
+        }
+
+        @keyframes morphTwo {
+            0% {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            }
+            50% {
+                border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+            }
+            100% {
+                border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            }
+        }
+    </style>
+</head>
 <body>
-    <span class="menu"><img src="assets/icons/icons8-menu-50.png" alt=""></span>
-    <header id="header" class="header">
-        <div class="">
-            <div class="profile">
-                <img src="assets/images/resmi_1.jpg" alt="" class="img-fluid rounded-circle">
-                <h1 style="margin-bottom: 10px;">
-                    <a href="index.html">
-                        Rikzan Fernanda <br>
-                    </a>
-                </h1>
-            </div>
-            <div style="display: flex;justify-content: center;">
-                <div class="sosmed">
-                    <a href="https://www.instagram.com/rikzanfernanda/" target="_blank">
-                        <img src="assets/icons/icons8-instagram.svg" alt="" width="25px">
-                    </a>
-                </div>
-                <div class="sosmed">
-                    <a href="https://web.facebook.com/rikzan.fernanda" target="_blank">
-                        <img src="assets/icons/icons8-facebook.svg" alt="" width="25px">
-                    </a>
-                </div>
-                <div class="sosmed">
-                    <a href="https://wa.me/6289667556818" target="_blank">
-                        <img src="assets/icons/icons8-whatsapp.svg" alt="" width="25px">
-                    </a>
-                </div>
-                <div class="sosmed">
-                    <a href="https://www.linkedin.com/in/rikzan-fernanda-9097831ab/" target="_blank">
-                        <img src="assets/icons/icons8-linkedin-circled.svg" alt="" width="25px">
-                    </a>
-                </div>
-                <div class="sosmed">
-                    <a href="https://github.com/rikzanfernanda" target="_blank">
-                        <img src="assets/icons/icons8-git.svg" alt="" width="25px">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <nav class="nav-menu">
-            <ul>
-                <li>
-                    <a href="index.html"><span><img src="assets/icons/icons8-home-20.png" alt=""></span>Home</a>
-                </li>
-                <li>
-                    <a href="#about"><span><img src="assets/icons/icons8-info-50.png" alt=""></span>About</a>
-                </li>
-                <li>
-                    <a href="#portfolio"><span><img src="assets/icons/icons8-moleskine-50.png" alt=""></span>Portfolio</a>
-                </li>
-                <li>
-                    <a href="#contact"><span><img src="assets/icons/icons8-add-phone-50.png" alt=""></span>Contact</a>
-                </li>
-            </ul>
-        </nav>
-        <span class="close-nav">&times;</span>
-        </div>
-    </header>
-    <section id="hero" class="hero">
-        <div class="efek"></div>
-        <div class="hero-container">
-            <div class="welcome welcome-hide">
-                <h1>Welcome</h1>
-                <p>Graphic Designer and Web Developer</p>
-                <div style="margin-top: 50px;">
-                    <a href="https://www.upwork.com/freelancers/~01c2a42b9b92a02bdc" target="_blank" class="btn btn-primary">Hire</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <main id="main">
-        <section id="about">
-            <div class="container about-hide">
-                <div class="section-title">
-                    <h2>About</h2>
-                </div>
-                <div class="row">
-                    <div class="col-7">
-                        <ul class="identitas">
-                            <h3>Other Profiles</h3>
-                            <li>Upwork: <a href="https://www.upwork.com/freelancers/~01c2a42b9b92a02bdc" target="_blank">https://www.upwork.com/freelancers/~01c2a42b9b92a02bdc</a></li>
-                            <li>LinkedIn: <a href="https://www.linkedin.com/in/rikzan-fernanda-9097831ab/" target="_blank">https://www.linkedin.com/in/rikzan-fernanda-9097831ab/</a></li>
-                            <li>Projects.co.id: <a href="https://projects.co.id/public/browse_users/view/0a451e/rikzan-fernanda" target="_blank">https://projects.co.id/public/browse_users/view/0a451e/rikzan-fernanda</a>
-                            </li>
-                            <li>
-                                Shutterstock:
-                                <a href="https://www.shutterstock.com/g/Rikzan+Fernanda" target="_blank">https://www.shutterstock.com/g/Rikzan+Fernanda</a>
-                            </li>
-                            <h3>Skills</h3>
-                            <li>
-                                <div class="skill-bar">
-                                    <div class="design">Graphic designer</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="skill-bar">
-                                    <div class="web">Web development</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="skill-bar">
-                                    <div class="python">Python</div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="skill-bar">
-                                    <div class="wordpress">Wordpress</div>
-                                </div>
-                            </li>
-                            <h3>Tools</h3>
-                            <li>
-                                Adobe Photoshop, Adobe Illustrator, HTML, CSS, Javascript, PHP, Python
-                            </li>
-                        </ul>
-                        <p>
-                            Hallo there, i am Rikzan from Indonesia
-                            I am very experienced in using Photoshop and Illustrator. using the software for more than 3 years. Working with me, there are no limits to design changes. I'll make a design for you until you satisfied it. My expertise:
-                        </p>
-                        <b>Graphic design</b>
-                        <ul class="identitas" style="margin-top: 0.5rem;margin-bottom: 1rem">
-                            <li>sticker design</li>
-                            <li>brochures</li>
-                            <li>banner or x banner</li>
-                            <li>social media posts</li>
-                            <li>poster</li>
-                        </ul>
-                        <b>Editing</b>
-                        <ul class="identitas"  style="margin-top: 0.5rem">
-                            <li>color correction/color grading</li>
-                            <li>product photo editing</li>
-                            <li>photo retouch</li>
-                            <li>photo manipulation</li>
-                        </ul>
-                    </div>
-                    <div class="col-5">
-                        <div class="card shadow">
-                            <div class="card-foto">
-                                <img src="assets/images/resmi_1.jpg" alt="">
-                            </div>
-                            <ul class="identitas" style="margin-top: 20px;">
-                                <li>Name: <span class="c-blue">Rikzan Fernanda</span></li>
-                                <li>Date of Birth: <span class="c-blue">Madiun, January-10-2001</span></li>
-                                <li>Address: <span class="c-blue">Pemalang, Central Java, Indonesia</span></li>
-                                <li>Study: <span class="c-blue">Dian Nuswantoro University</span></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="portfolio" class="portfolio section-bg">
-            <div class="container portfolio-hide">
-                <div class="section-title">
-                    <h2>Portfolio</h2>
-                </div>
-                <div class="row">
-                    <div class="more-efek">
-                        <div class="more"></div>
-                        <a href="portfolio.html" class="more-btn btn btn-primary shadow">See More</a>
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/images/portfolio/cod.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/images/portfolio/poster_1.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/images/portfolio/sosmed5-m.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/images/portfolio/page_layout.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/images/portfolio/feedig_1.jpg" alt="">
-                    </div>
-                    <div class="col-4">
-                        <img src="assets/images/portfolio/lipstick.jpg" alt="">
-                    </div>
-                </div>
-                <div style="margin-top: 2rem">
-                    <a href="portfolio2.html" class="btn btn-primary">Portfolio 2</a>
-                </div>
-            </div>
-        </section>
-        <section id="contact" class="contact">
-            <div class="container contact-hide">
-                <div class="section-title">
-                    <h2>Contact</h2>
-                    <p>
-                        How, are you satisfied to see my portfolio? You can just contact me
-                        with the contact below or fill in the form below to order via email.
-                        <br>Thank you...
-                    </p>
-                </div>
-                <div class="row">
-                    <div class="col-5">
-                        <div class="card shadow">
-                            <div class="card-foto">
-                                <!-- <img src="assets/images/resmi_1.jpg" alt=""> -->
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.861379364723!2d109.52339411379276!3d-6.907174469515605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fd8e232c31673%3A0x6bd0fa0c8b35fe30!2sGg.%20Ontorejo%2C%20Pesadangan%2C%20Ujunggede%2C%20Kec.%20Ampelgading%2C%20Kabupaten%20Pemalang%2C%20Jawa%20Tengah%2052364!5e0!3m2!1sid!2sid!4v1607932503747!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-                            </div>
-                            <ul style="list-style-type: none;">
-                                <li>
-                                    <h3>Address</h3>
-                                    <span>Ds. Ujunggede, Kec. Ampelgading, Kab. Pemalang, Jawa Tengah</span>
-                                </li>
-                                <li>
-                                    <h3>Email</h3>
-                                    <span>111201912159@mhs.dinus.ac.id</span>
-                                    <span>zanfernanda10@gmail.com</span>
-                                </li>
-                                <li>
-                                    <h3>Whatsapp</h3>
-                                    <span>+62 89667556818</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-7">
-                        <div class="form-hubungi">
-                            <h3>Contact me?</h3>
-                            <form action="#" class="form" method="POST">
-                                <div class="form-group">
-                                    <label for="nama">Your name?</label>
-                                    <input type="text" id="nama" name="nama" placeholder="John Smith">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Your email?</label>
-                                    <input type="text" id="email" name="email" placeholder="johnsmith@gmail.com">
-                                </div>
-                                <div class="form-group">
-                                    <label for="pesan">What is your message?</label>
-                                    <textarea name="pesan" id="pesan"></textarea>
-                                </div>
-                                <input type="submit" value="Send" class="btn btn-primary" disabled>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer id="footer" class="section-bg">
+<div class="text-right pr-4" style="width: 100%;position: fixed; bottom: 2rem; z-index: 1">
+    <i class="fas fa-arrow-up btn-circle btn-success shadow" id="scroll-to-top"></i>
+</div>
+<!--photo-->
+<div class="" style="background-color: #4d95a8; height: 100vh">
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    <h1>Fernanda</h1>
-                </div>
-                <div class="col-6" style="text-align: right;">
-                    Follow me on: <a href="">instagram</a> <a href="">facebook</a>
-                </div>
-            </div>
-            <hr>
-            <div class="row" style="margin-bottom: 30px;">
-                <div class="col-3">
-                    <h3>Menu:</h3>
-                    <ul class="footer-ul">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about">About</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <h3>Contact Me:</h3>
-                    <ul class="footer-ul">
-                        <li>
-                            <b>Address</b><br>
-                            <span>Ds. Ujunggede, Kec. Ampelgading, Kab. Pemalang, Jawa Tengah</span>
-                        </li>
-                        <li>
-                            <b>Email</b><br>
-                            <span>111201912159@mhs.dinus.ac.id</span>
-                            <span>zanfernanda10@gmail.com</span>
-                        </li>
-                        <li>
-                            <b>Whatsapp</b><br>
-                            <span>+62 89667556818</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <h3>Hire me on upwork</h3>
-                    <a href="https://www.upwork.com/freelancers/~01c2a42b9b92a02bdc" target="_blank" class="btn btn-primary">Hire</a>
-                </div>
-            </div>
-            <hr>
-            <div class="copyright">
-                &copy; Copyright <strong><a href="https://github.com/rikzanfernanda" target="_blank">Rikzan
-                        Fernanda</a></strong>
+            <a class="navbar-brand" href="index.html">Rikzan Fernanda</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="scroll nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="scroll nav-link" href="#portfolios">Portfolios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="scroll nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </footer>
-    <!-- Scripts -->
-    <script src="assets/js/myscript.js"></script>
-    <script src="assets/js/portfolio_more.js"></script>
-    <script src="assets/js/index.js"></script>
+    </nav>
+    <div class="container" id="hero">
+        <div class="row m-0" style="padding-top: 5rem">
+            <div class="col-md-6 text-white pb-5">
+                <h1>Hallo,</h1>
+                <h2 id="typer-me"></h2>
+                <!--                <h2>I'm Graphic Designer</h2>-->
+                <!--                <h2>I'm Web Developer</h2>-->
+                <div class="text-center mt-5">
+                    <a href="https://github.com/rikzanfernanda" target="_blank" class="text-dark mr-3"
+                       style="font-size: 2rem"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/rikzan-fernanda-9097831ab/" target="_blank"
+                       class="text-dark mr-3" style="font-size: 2rem"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/rikzanfernanda/" target="_blank" class="text-dark mr-3"
+                       style="font-size: 2rem"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.facebook.com/rikzan.fernanda" target="_blank" class="text-dark mr-3"
+                       style="font-size: 2rem"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box box2 d-none d-md-block"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--about-->
+<div style="padding-top: 5rem;" id="about">
+    <div class="container">
+        <h1 class="text-center mb-5">ABOUT</h1>
+        <div class="row m-0 mb-5">
+            <div class="col-3 col-md-2 text-center">
+                <img src="assets/images/resmi_1.jpg" alt="" class="img-fluid" style="border-radius: 100%;">
+            </div>
+            <div class="col-9 col-md-10">
+                <p class="font-italic">
+                    I am graphic designer and web developer from Indonesia. With graphic designer, I have 4 years
+                    experience
+                    about
+                    photo editing, photo manipulation, create illustration, etc. My favorite tool is Adobe Photoshop and
+                    Adobe
+                    Illustrator. Currently, I'm working as web developer since 2019. I am expert at
+                    PHP language and laravel/CI framework. And currently, i am informatic engineering student at Dian
+                    Nuswantoro
+                    University.
+                </p>
+            </div>
+        </div>
+
+        <!--education-->
+        <div class="mb-4">
+            <h3 class="mb-3">Education</h3>
+            <div class="row m-0">
+                <!--smk-->
+                <div class="col-md-4 animateOnScroll" data-animation-type="zoomIn" data-timeout="0"
+                     data-offset-top="10">
+                    <div class="bg-white shadow-sm card-hover row m-0 mb-4" style="border-radius: 0.8rem;">
+                        <div class="col-4 p-0">
+                            <img class="card-img-top" src="assets/images/smk.jpeg" alt="Card image cap"
+                                 style="border-radius: 0.8rem 0rem 0rem 0.8rem; height: 100%; object-fit: cover">
+                        </div>
+
+                        <div class="col-8 p-0">
+                            <div class="card-body">
+                                <h6 class="card-title">Budi Utomo Senior High School</h6>
+                                <p class="card-text mb-3" style="font-size: 0.8rem;">
+                                    <b>Multimedia</b><br>
+                                    <i class="fas fa-map-marker-alt"></i> Jombang, East Java
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--udinus-->
+                <div class="col-md-4 animateOnScroll" data-animation-type="zoomIn" data-timeout="300"
+                     data-offset-top="10">
+                    <div class="bg-white shadow-sm card-hover row m-0" style="border-radius: 0.8rem;">
+                        <div class="col-4 p-0">
+                            <img class="card-img-top" src="assets/images/udinus.jpg" alt="Card image cap"
+                                 style="border-radius: 0.8rem 0rem 0rem 0.8rem; height: 100%; object-fit: cover">
+                        </div>
+
+                        <div class="col-8 p-0">
+                            <div class="card-body">
+                                <h6 class="card-title">Dian Nuswantoro University</h6>
+                                <p class="card-text mb-3" style="font-size: 0.8rem;">
+                                    <b>Computer Science</b><br>
+                                    <i class="fas fa-map-marker-alt"></i> Semarang, Central Java
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--skills-->
+        <div id="skills">
+            <h3 class="">Skills</h3>
+            <div class="animateOnScroll" data-animation-type="bounceIn" data-timeout="0" data-offset-top="100"  data-animation-duration="2000">
+                <img title="php" src="https://img.icons8.com/officel/160/000000/php-logo.png"
+                     class="mr-4"/>
+                <img title="html" src="https://img.icons8.com/color/120/000000/html-5--v1.png" class="mr-4"
+                     style="width: 3rem"/>
+                <img title="css" src="https://img.icons8.com/color/128/000000/css3.png" class="mr-4"/>
+                <img title="javascript" src="https://img.icons8.com/color/96/000000/javascript--v1.png" class="mr-4"
+                     style="width: 3rem"/>
+                <img title="jquery" src="assets/images/ui/jquery.png" alt="" class="mr-4">
+                <img title="codeigniter" src="assets/images/ui/ci.png" alt="" class="mr-4">
+                <img title="bootstrap" src="https://img.icons8.com/color/144/000000/bootstrap.png" class="mr-4"/>
+                <img title="laravel" src="https://img.icons8.com/fluency/96/000000/laravel.png" class="mr-4"/>
+                <img title="python" src="https://img.icons8.com/color/96/000000/python--v1.png" class="mr-4"/>
+                <img title="mysql" src="https://img.icons8.com/fluency/144/000000/mysql-logo.png" class="mr-4"/>
+                <img title="mongodb" src="https://img.icons8.com/color/144/000000/mongodb.png" class="mr-4"/>
+                <img title="wordpress" src="https://img.icons8.com/color/144/000000/wordpress.png" class="mr-4"/>
+                <img title="adobe photoshop" src="https://img.icons8.com/fluency/144/000000/adobe-photoshop.png"
+                     class="mr-4"/>
+                <img title="adobe illustrator" src="https://img.icons8.com/color/144/000000/adobe-illustrator--v1.png"
+                     class="mr-4"/>
+            </div>
+        </div>
+    </div>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0099ff" fill-opacity="1"
+              d="M0,128L60,154.7C120,181,240,235,360,245.3C480,256,600,224,720,197.3C840,171,960,149,1080,128C1200,107,1320,85,1380,74.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
+</div>
+
+<!--portfolios-->
+<div class="" style="padding-top: 5rem; padding-bottom: 5rem; background-color: #0c5460" id="portfolios">
+    <div class="container">
+        <h1 class="text-center text-white mb-5">PORTFOLIOS</h1>>
+        <div class="row m-0 flex-row-reverse border-bottom mb-5">
+            <div class="col-lg-4 text-white pl-lg-5">
+                <h4>WEB DEVELOPMENT</h4>
+                <p>
+                    I am skilled at creating php/mySQL, javascript/jQuery, web sites/applications.
+                    I have made several applications, some using CodeIgniter 3 and others using laravel 8. Almost all of
+                    my projects use jQuery and bootstrap.
+                </p>
+            </div>
+            <div class="col-lg-8">
+                <!--card portfolio-->
+                <div class="bg-white shadow-sm card-hover row m-0 mb-5 animateOnScroll" data-animation-type="flipInX" data-timeout="100" data-offset-top="100" style="border-radius: 0.8rem;">
+                    <div class="col-4 col-md-4 p-0 d-none d-md-block">
+                        <img class="card-img-top" src="assets/images/web/saving.png" alt="Card image cap"
+                             style="border-radius: 0.8rem 0rem 0rem 0.8rem; height: 100%; object-fit: cover;">
+                    </div>
+
+                    <div class="col-12 col-md-8 p-0">
+                        <div class="card-body">
+                            <img class="card-img-top d-md-none mb-2" src="assets/images/web/saving.png"
+                                 alt="Card image cap"
+                                 style="border-radius: 0.8rem 0.8rem; height: 100%; object-fit: cover;">
+                            <h3 class="card-title" style="margin-bottom: 0.05rem">saving</h3>
+                            <small>Jul 2021 - now</small>
+                            <p class="card-text mb-3 mt-2" style="font-size: 0.8rem;">
+                                Personal finance management app, built using laravel 8 (backend)
+                                and bootstrap 4 (frontend) and integrates with several jquery plugins. As
+                                core developer in app development who builds all the features that
+                                there is an application and how it looks
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <img src="https://img.icons8.com/fluency/96/000000/laravel.png" class="mr-2"
+                                         style="width: 1.5rem" title="laravel"/>
+                                    <img src="https://img.icons8.com/color/144/000000/bootstrap.png" class="mr-2"
+                                         style="width: 1.5rem" title="bootstrap"/>
+                                    <img src="assets/images/ui/jquery.png" alt="" class="mr-2" style="width: 4rem"
+                                         title="jquery">
+                                </div>
+                                <div>
+                                    <a href="https://www.savingid.my.id" target="_blank"
+                                       class="btn btn-primary"><i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end card portfolio-->
+
+                <!--card portfolio-->
+                <div class="bg-white shadow-sm card-hover row m-0 mb-5 animateOnScroll" data-animation-type="flipInX" data-timeout="100" data-offset-top="100" style="border-radius: 0.8rem;">
+                    <div class="col-4 col-md-4 p-0 d-none d-md-block">
+                        <img class="card-img-top" src="assets/images/web/ataboy.png" alt="Card image cap"
+                             style="border-radius: 0.8rem 0rem 0rem 0.8rem; height: 100%; object-fit: cover;">
+                    </div>
+
+                    <div class="col-12 col-md-8 p-0">
+                        <div class="card-body">
+                            <img class="card-img-top d-md-none mb-2" src="assets/images/web/ataboy.png"
+                                 alt="Card image cap"
+                                 style="border-radius: 0.8rem 0.8rem; height: 100%; object-fit: cover;">
+                            <h3 class="card-title" style="margin-bottom: 0.05rem">ATAboy</h3>
+                            <small>Jun 2021 - Agu 2021</small>
+                            <p class="card-text mb-3 mt-2" style="font-size: 0.8rem;">
+                                Disaster donation management application in Boyolali, built using
+                                codeigniter 3 (backend) and bootstrap (frontend). Contribute as a junior
+                                developers in application development, including making a slider in the menu
+                                home, create a CRUD feature for disaster submission, create data filters for
+                                downloads, etc.
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <img src="assets/images/ui/ci.png" alt="" class="mr-2" style="width: 1.5rem">
+                                    <img src="https://img.icons8.com/color/144/000000/bootstrap.png" class="mr-2"
+                                         style="width: 1.5rem"/>
+                                    <img src="assets/images/ui/jquery.png" alt="" class="mr-2" style="width: 4rem">
+                                </div>
+                                <div>
+                                    <a href="https://ataboy.id/index.php/Home" target="_blank"
+                                       class="btn btn-primary"><i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end card portfolio-->
+
+                <!--card portfolio-->
+                <div class="bg-white shadow-sm card-hover row m-0 mb-5 animateOnScroll" data-animation-type="flipInX" data-timeout="100" data-offset-top="100" style="border-radius: 0.8rem;">
+                    <div class="col-4 col-md-4 p-0 d-none d-md-block">
+                        <img class="card-img-top" src="assets/images/web/ecsmc.png" alt="Card image cap"
+                             style="border-radius: 0.8rem 0rem 0rem 0.8rem; height: 100%; object-fit: cover">
+                    </div>
+
+                    <div class="col-12 col-md-8 p-0">
+                        <div class="card-body">
+                            <img class="card-img-top d-md-none mb-2" src="assets/images/web/ecsmc.png"
+                                 alt="Card image cap"
+                                 style="border-radius: 0.8rem 0.8rem; height: 100%; object-fit: cover;">
+                            <h3 class="card-title" style="margin-bottom: 0.05rem">E-CSMS</h3>
+                            <small>Sep 2020 - Jan 2021</small>
+                            <p class="card-text mb-3 mt-2" style="font-size: 0.8rem;">
+                                Project administration application, built using codeigniter 3 (backend) and
+                                bootstrap (frontend). Contribute as a junior developer in development
+                                applications, including creating forms, making download features for pdf files and
+                                excel. The application has authentication, authorization, and integrated database
+                                features.
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <img src="assets/images/ui/ci.png" alt="" class="mr-2" style="width: 1.5rem">
+                                    <img src="https://img.icons8.com/color/144/000000/bootstrap.png" class="mr-2"
+                                         style="width: 1.5rem"/>
+                                    <img src="assets/images/ui/jquery.png" alt="" class="mr-2" style="width: 4rem">
+                                </div>
+                                <div>
+                                    <a href="http://ecsms.sikembang.com" target="_blank" class="btn btn-primary"><i
+                                            class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end card portfolio-->
+            </div>
+        </div>
+
+        <!--graphic design portfolios-->
+        <div class="row m-0 flex-row-reverse" id="editing-portfolios">
+            <div class="col-lg-4 text-white pl-lg-5">
+                <h4>GRAPHIC DESIGN AND EDITING</h4>
+                <p>
+                    The tools I use are Adobe Illustrator and Photoshop. I have more than 3 years experience in graphic
+                    design. Making a quality design requires several considerations such as the target audience and
+                    creative content. In making designs, I like to make designs that are modern, simple, clean,
+                    functional, stylish and keep up with the times. Like some of my work at: behance.net/rikzan_fernanda
+                </p>
+            </div>
+            <div class="col-lg-8">
+                <div class="row m-0 mb-4">
+                    <div class="col-6 pb-4 animateOnScroll" data-animation-type="flipInY" data-timeout="0" data-offset-top="200">
+                        <img class="img-fluid shadow-sm card-hover"
+                             src="assets/images/portfolio/eidaladha_character7.jpg" alt="portfolio">
+                    </div>
+                    <div class="col-6 pb-4 animateOnScroll" data-animation-type="flipInY" data-timeout="200" data-offset-top="200">
+                        <img class="img-fluid shadow-sm card-hover"
+                             src="assets/images/portfolio/eidaladha_character8.jpg" alt="portfolio">
+                    </div>
+                    <div class="col-6 pb-4 animateOnScroll" data-animation-type="flipInY" data-timeout="0" data-offset-top="200">
+                        <img class="img-fluid shadow-sm card-hover" src="assets/images/portfolio/landing_page_1.jpg"
+                             alt="portfolio">
+                    </div>
+                    <div class="col-6 pb-4 animateOnScroll" data-animation-type="flipInY" data-timeout="200" data-offset-top="200">
+                        <img class="img-fluid shadow-sm card-hover" src="assets/images/portfolio/cod.jpg"
+                             alt="portfolio">
+                    </div>
+                    <div class="col-6 pb-4 animateOnScroll" data-animation-type="flipInY" data-timeout="0" data-offset-top="200">
+                        <img class="img-fluid shadow-sm card-hover" src="assets/images/portfolio/kingedit.jpg"
+                             alt="portfolio">
+                    </div>
+                    <div class="col-6 pb-4 animateOnScroll" data-animation-type="flipInY" data-timeout="200" data-offset-top="200">
+                        <img class="img-fluid shadow-sm card-hover" src="assets/images/portfolio/web-donasi.jpg"
+                             alt="portfolio">
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <a href="portfolio-editing.html" class="btn btn-primary">See More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--contact-->
+<div style="padding-top: 5rem;" id="contact">
+    <div class="container">
+        <h1 class="text-center mb-5">CONTACT</h1>>
+        <div class="row m-0">
+            <div class="col-md-6">
+                <iframe class="mb-4"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3388.3920975409656!2d109.52659184952269!3d-6.9073190209047555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fd8e232c31673%3A0x6bd0fa0c8b35fe30!2sGg.%20Ontorejo%2C%20Pesadangan%2C%20Ujunggede%2C%20Kec.%20Ampelgading%2C%20Kabupaten%20Pemalang%2C%20Jawa%20Tengah%2052364!5e1!3m2!1sid!2sid!4v1632839621353!5m2!1sid!2sid"
+                        style="border:0; width: 100%; height: 20rem" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="col-md-6">
+                <div class="d-flex mb-4">
+                    <div>
+                        <img src="https://img.icons8.com/color/144/000000/whatsapp--v1.png" style="height: 2rem"/>
+                    </div>
+                    <div class="pl-3">
+                        <p>+62 85157660753</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-4">
+                    <div>
+                        <img src="https://img.icons8.com/external-justicon-flat-justicon/96/000000/external-gmail-social-media-justicon-flat-justicon.png"
+                             style="height: 2rem"/>
+                    </div>
+                    <div class="pl-3">
+                        <p>fernandarikzan@gmail.com</p>
+                    </div>
+                </div>
+                <div class="d-flex mb-4">
+                    <div>
+                        <img src="https://img.icons8.com/color/96/000000/address--v1.png" style="height: 2rem"/>
+                    </div>
+                    <div class="pl-3">
+                        <p>Pemalang, Central Java, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#0099ff" fill-opacity="1"
+              d="M0,96L80,133.3C160,171,320,245,480,245.3C640,245,800,171,960,149.3C1120,128,1280,160,1360,176L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+    </svg>
+</div>
+<!--end contact-->
+
+<!--footer-->
+<div style="padding-top: 4rem; padding-bottom: 4rem; background-color: #e5e5e5">
+    <div class="container text-center">
+        <a href="https://github.com/rikzanfernanda" target="_blank" class="text-dark">
+            <h5>rikzanfernanda</h5>
+        </a>
+        <div class="d-flex justify-content-center">
+            <a class="nav-link scroll" href="#about">About</a>
+            <a class="nav-link scroll" href="#portfolios">Portfolios</a>
+            <a class="nav-link scroll" href="#contact">Contact</a>
+        </div>
+    </div>
+</div>
+<!--end footer-->
+
+<!-- Scripts -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/animate_on_scroll.min.js"></script>
+<script src="assets/js/typer.min.js"></script>
+<script src="assets/js/myscript.js"></script>
 </body>
 
 </html>

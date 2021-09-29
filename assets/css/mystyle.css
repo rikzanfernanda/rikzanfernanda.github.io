@@ -1,203 +1,54 @@
-/* -------------------------------------------------------------
-# General
----------------------------------------------------------------- */
-
-*, ::after, ::before {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+.btn{
+    border-radius: 10rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
-
-body {
-    font-family: "Open Sans", sans-serif;
-    color: #272829;
-    margin: 0;
+.btn-circle{
+    padding: 1rem;
+    border-radius: 100%;
+    cursor: pointer;
 }
-
-a {
-    color: #149ddd;
-    text-decoration: none;
+.bg-grey{
+    background-color: #eaeaea;
 }
-
-a:hover {
-    color: white;
-    text-decoration: none;
+.card-hover:hover{
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.25) !important;
 }
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway", sans-serif;
-}
-
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-}
-
-.rounded-circle {
-    border-radius: 50%;
-}
-
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-section {
-    padding: 60px 0;
+#portfolios{
+    background-image: url(../images/ui/liquid-cheese.svg);
+    background-size: cover;
+    background-attachment: fixed;
     overflow: hidden;
 }
 
-#main {
-    margin-left: 300px;
+#hero h1{
+    font-size: 4rem;
+}
+#hero h2{
+    font-size: 1.5rem;
+}
+#skills img{
+    height: 2rem;
+    margin-bottom: 1.5rem;
+}
+#editing-portfolios img{
+    border-radius: 0.8rem;
+    object-fit: cover;
+    height: 6rem;
 }
 
-table {
-    border-collapse: collapse;
-}
-
-p {
-    /* line-height: 150%;
-    font-size: 1.1em; */
-    /* font-weight: 100; */
-}
-
-.c-blue {
-    color: #149ddd;
-}
-
-.row {
-    position: relative;
-}
-
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-.col-12 {
-    width: 100%;
-    float: left;
-    padding: 5px 10px 5px 0px;
-}
-
-.col-3 {
-    width: 25%;
-    float: left;
-    padding: 5px 10px 5px 0px;
-}
-
-.col-1 {
-    width: 8.3%;
-    float: left;
-    padding: 5px 10px 5px 0px;
-}
-
-.col-2 {
-    width: 16.6%;
-    float: left;
-    padding: 5px 10px 5px 0px;
-}
-
-.col-5 {
-    width: 41.6%;
-    float: left;
-    padding: 5px 10px 5px 0px;
-}
-
-.col-6 {
-    width: 50%;
-    float: left;
-    padding: 5px 10px 5px 0px;
-}
-
-.col-7 {
-    width: 58.3%;
-    float: left;
-    padding: 5px 10px 5px 0px;
-}
-
-.col-8 {
-    width: 66.7%;
-    float: left;
-    padding: 5px 10px 5px 0px;
-}
-
-.col-4 {
-    float: left;
-    width: 33.3%;
-    padding: 5px 10px 5px 0px;
-}
-
-.mt-10 {
-    margin-top: 10px;
-}
-
-.btn {
-    padding: 10px 12px;
-    cursor: pointer;
-    font-size: medium;
-    border: 0px;
-}
-
-.btn-primary {
-    background-color: #149ddd;
-    border: 0px;
-    color: white;
-}
-
-.btn-primary:hover {
-    background-color: #58b2db;
-}
-
-.text-right {
-    text-align: right;
-}
-
-ul {
-    padding: 0px;
-}
-
-span.menu {
-    display: none;
-    width: 50px;
-    padding: 0px 7px;
-    position: fixed;
-    right: 15px;
-    top: 15px;
-    z-index: 9998;
-    border: 0;
-    background-color: #040b14;
-    transition: all 0.4s;
-    cursor: pointer;
-    text-align: right;
-}
-
-span.menu img {
-    width: 100%;
-}
-
-a:hover {
-    color: black;
-}
-
-.shadow {
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
-}
-
-@media (max-width: 576px) {
-    .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-12 {
-        width: 100%;
+@media (min-width: 540px) {
+    #hero h1{
+        font-size: 8rem;
     }
-}
-
-@media (max-width: 900px) {
-    #main {
-        margin-left: 0;
+    #hero h2{
+        font-size: 2rem;
     }
-    span.menu {
-        display: block;
+    #skills img{
+        height: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    #editing-portfolios img{
+        height: 15rem;
     }
 }
