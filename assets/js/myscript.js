@@ -18,7 +18,7 @@ $(document).ready(function () {
     });
 
     //btn scroll to top
-    $('#scroll-to-top').on('click', function (e){
+    $('#scroll-to-top').on('click', function (){
         $('html, body').animate({
             scrollTop: (0)
         }, 1000);
@@ -38,4 +38,9 @@ $(document).ready(function () {
         autoStart: true,
         startDelay: 100,
     });
+
+    $("#about-img").faceCursor({
+        perspective:"5rem"
+    });
+
 });

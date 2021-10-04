@@ -36,6 +36,22 @@
     object-fit: cover;
     height: 6rem;
 }
+#about-img{
+    width: 50%;
+}
+.title{
+    position: relative;
+    margin-bottom: 5rem;
+}
+.title:after{
+    content: "";
+    width: 4rem;
+    height: 0.5rem;
+    background-color: #c9c9c9;
+    position: absolute;
+    bottom: -1rem;
+    right: 50%;
+}
 
 @media (min-width: 540px) {
     #hero h1{
@@ -50,5 +66,8 @@
     }
     #editing-portfolios img{
         height: 15rem;
+    }
+    #about-img{
+        width: 25%;
     }
 }
