@@ -1,7 +1,7 @@
 {
   "name": "Kirim WA",
   "short_name": "Kirim WA",
-  "start_url": "/index.php",
+  "start_url": "/wa.html",
   "background_color": "#454d55",
   "description": "Kirim WA tanpa harus save nomor dulu",
   "display": "standalone",
