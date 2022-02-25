@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="title" content="Form WA">
     <meta name="description" content="Kirim pesan lewat WA tanpa harus save nomor terlebih dahulu">
+
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+    <!-- PWA  -->
+    <meta name="theme-color" content="#454d55">
+    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="manifest" href="manifest.json">
     <title>Kirim WA</title>
     <style>
         * {
@@ -19,7 +26,7 @@
             padding-top: 40vh;
         }
 
-        p{
+        p {
             font-size: 12px;
             text-align: center;
         }
@@ -52,13 +59,15 @@
         }
 
         @media (min-width: 576px) {
-            *{
+            * {
                 font-size: 20px;
             }
-            div{
+
+            div {
                 width: 50%;
             }
-            p{
+
+            p {
                 font-size: 16px;
             }
         }
@@ -89,6 +98,14 @@
             window.open(link, '_blank');
         }
     })
+</script>
+<script src="sw.js"></script>
+<script>
+    if (!navigator.serviceWorker.controller) {
+        navigator.serviceWorker.register("/sw.js").then(function (reg) {
+            console.log("Service worker has been registered for scope: " + reg.scope);
+        });
+    }
 </script>
 </body>
 </html>

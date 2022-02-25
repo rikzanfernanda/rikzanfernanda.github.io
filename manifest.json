@@ -1,0 +1,23 @@
+{
+  "name": "Kirim WA",
+  "short_name": "Kirim WA",
+  "start_url": "/index.php",
+  "background_color": "#454d55",
+  "description": "Kirim WA tanpa harus save nomor dulu",
+  "display": "standalone",
+  "theme_color": "#454d55",
+  "icons": [
+    {
+      "src": "logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
