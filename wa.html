@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Form WA">
+    <meta name="description" content="Kirim pesan lewat WA tanpa harus save nomor terlebih dahulu">
+
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+    <!-- PWA  -->
+    <meta name="theme-color" content="#454d55">
+    <link rel="apple-touch-icon" href="logo.png">
+    <link rel="manifest" href="manifest.json">
+    <title>Kirim WA</title>
+    <style>
+        * {
+            background-color: #f1f1f1;
+            font-size: 20px;
+            box-sizing: border-box;
+        }
+
+        div {
+            width: 90%;
+            margin: auto;
+            padding-top: 40vh;
+        }
+
+        p {
+            font-size: 12px;
+            text-align: center;
+        }
+
+        #number {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 26px;
+            background-color: white;
+            margin-bottom: 16px;
+        }
+
+        #number:focus {
+            outline: none;
+        }
+
+        #btn-kirim {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 26px;
+            width: 100%;
+        }
+
+        @media (min-width: 576px) {
+            * {
+                font-size: 20px;
+            }
+
+            div {
+                width: 50%;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <input type="text" id="number" placeholder="6285157660753">
+    <a href="" id="btn-kirim">Kirim WA</a>
+    <p>Created by rikzanfernanda@gmail.com</p>
+</div>
+
+<script>
+    let inputNumber = document.getElementById('number');
+    let btn = document.getElementById('btn-kirim');
+    let link = `https://api.whatsapp.com/send?phone=${inputNumber.value}`;
+
+    inputNumber.addEventListener('input', (e) => {
+        link = `https://api.whatsapp.com/send?phone=${inputNumber.value}`;
+        btn.setAttribute('href', link)
+    })
+
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (inputNumber.value === '') {
+            alert('Masukkan No WA');
+        } else {
+            window.open(link, '_blank');
+        }
+    })
+</script>
+<script src="sw.js"></script>
+<script>
+    if (!navigator.serviceWorker.controller) {
+        navigator.serviceWorker.register("/sw.js").then(function (reg) {
+            console.log("Service worker has been registered for scope: " + reg.scope);
+        });
+    }
+</script>
+</body>
+</html>
