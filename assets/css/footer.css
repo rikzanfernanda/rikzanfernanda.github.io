@@ -1,0 +1,33 @@
+/* -------------------------------------------------------------
+# Footer
+---------------------------------------------------------------- */
+
+#footer {
+    padding: 15px;
+    color: black;
+    font-size: 14px;
+    margin-left: 300px;
+}
+
+#footer a:hover{
+    color:  #a8a9b4;
+}
+
+#footer .copyright {
+    text-align: center;
+}
+
+#footer ul{
+    margin: 0px;
+    list-style-type: none;
+}
+
+#footer ul li{
+    padding: 5px 0px;
+}
+
+@media (max-width: 900px){
+    #footer{
+        margin-left: 0px;
+    }
+}
