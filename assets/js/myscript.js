@@ -26,8 +26,8 @@ $(document).ready(function () {
 
     $("#typer-me").typer({
         strings: [
-            "I'm Graphic Designer",
-            "I'm Web Developer"
+            "I'm a Graphic Designer",
+            "I'm a Web Developer"
         ],
         useCursor:true,
         typeSpeed: 100,
