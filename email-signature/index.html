@@ -21,15 +21,7 @@
         }
 
         .signature-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            max-width: 650px;
-            border: none;
             padding: 10px 15px;
-            gap: 30px;
-            flex-wrap: wrap;
-            /* background-color: green; */
         }
 
         .profile {
@@ -95,14 +87,11 @@
         }
 
         .company-section {
+            margin-top: 30px;
             display: flex;
             flex-direction: column;
-            align-items: center;
             gap: 10px;
             flex-wrap: nowrap;
-            /* min-width: 180px; */
-            /* flex: 1 1 180px; */
-            /* justify-content: flex-end; */
         }
 
         .company-logo {
@@ -191,16 +180,19 @@
 
 <body>
     <div class="signature-container" role="contentinfo" aria-label="Email signature">
+        <div style="margin-bottom: 10px;">
+            <img src="logoipsum-358.png" alt="" style="height: 50px; object-fit: contain;">
+        </div>
         <div class="profile" role="region" aria-label="Profile details">
-            <div class="profile-photo" aria-hidden="true">
+            <!-- <div class="profile-photo" aria-hidden="true">
                 <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/71d16b74-d8d5-4935-bbb7-1c440e9f9a42.png"
                     alt="Headshot of Rebecca Balzer, a marketing director, black and white portrait with plant background"
                     onerror="this.onerror=null;this.src='https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d262b516-505f-4012-90f3-43511e007312.png';" />
-            </div>
+            </div> -->
             <div class="profile-info">
                 <strong>Rikzan Fernanda</strong>
                 <div class="title">Fullstack Developer</div>
-                <address>
+                <address style="margin-top: 18px;">
                     <b>Pemalang</b>
                     Pekalongan str. 23<br />
                     Central Java, Indonesia 12345
@@ -209,10 +201,6 @@
         </div>
 
         <div class="company-section" role="region" aria-label="Company and contacts">
-            <div>
-                <img src="logoipsum-358.png" alt="" style="height: 50px; object-fit: contain;">
-            </div>
-
             <div class="contacts" aria-label="Social media contacts">
                 <a href="#" title="Send email to Rikzan Fernanda" aria-label="Email">
                     <div class="sosmed-icon">
